@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenScape</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 id="logo">Green<span>Scape</span></h1>
+    </nav>
+    <div id="search">
+        <label for="cityN">Search:</label>
+        <input type="text" name="city" id="cityN">
+        <button id="fetchData">🔍</button>
+    </div>
+    <main>
+        <div id="dataBox">
+            <div class="mainData">
+                <h3 id="cityName">Phagwara</h3>
+                <h2 id="AQI">179</h2>
+                <p id="AQR">UNHEALTHY</p>
+            </div>
+            <div class="Pdata">
+                <h3 id="PolluDta"><u>Pollutant data(in μg/m3):</u></h3>
+                <p>CO : <span id="CO">794</span></p>
+                <p>NO2 : <span id="NO2">26.13</span></p>
+                <p>SO2 : <span id="SO2">9.3</span></p>
+                <p>PM10 : <span id="PM">188.29</span></p>
+            </div>
+        </div>
+        <div id="health-box">
+            <p id="hRH"> <u>Health Recommendation:</u></p>
+            <p id="hR">If you start to feel respiratory discomfort such as coughing or breathing difficulties, consider reducing the intensity 
+                        of your outdoor activities.
+                        Try to limit the time you spend near busy roads, construction sites, open fires and other sources of smoke.</p>
+        </div>
+            <div id="forecast-box">
+                <h2>AQI Forecast:</h2>
+                <div class="mainData">
+                    <h3 id="FcityName">Phagwara</h3>
+                    <h2 id="FAQI">35</h2>
+                </div>
+                <div id="mapDiv">
+                    <canvas id="aqiChart" width="100px" height="50px"></canvas>
+                </div>
+                
+            </div>
+    </main>
+    <section id="education">
+        <h2><u>Educational Section:</u></h2>
+    
+        <div class="subsection">
+            <h3>Air Pollution 101</h3>
+            <p><strong>What is Air Pollution?</strong><br>
+                Air pollution occurs when harmful substances, like gases and particulates, accumulate in the atmosphere. These pollutants come from both natural and human activities and affect both the environment and health.
+            </p>
+        </div>
+    
+        <div class="subsection">
+            <h4>Common Sources of Pollution</h4>
+            <ul>
+                <li><strong>Industrial Emissions:</strong> Factories release pollutants like sulfur dioxide and nitrogen oxides.</li>
+                <li><strong>Vehicle Emissions:</strong> Cars and buses emit harmful gases, especially in cities.</li>
+                <li><strong>Agriculture:</strong> Fertilizers and livestock produce methane and other pollutants.</li>
+                <li><strong>Natural Events:</strong> Wildfires, volcanic eruptions, and dust storms can introduce pollutants into the air.</li>
+            </ul>
+        </div>
+    
+        <div class="subsection">
+            <h4>Health Impacts of Air Pollution</h4>
+            <ul>
+                <li><strong>Respiratory Issues:</strong> Pollutants like PM10 can lead to asthma and other breathing problems.</li>
+                <li><strong>Heart Conditions:</strong> Long-term exposure can increase risks of cardiovascular diseases.</li>
+                <li><strong>General Health Effects:</strong> Air pollution can also impact the immune system and lead to other health issues.</li>
+            </ul>
+        </div>
+    
+        <div class="subsection">
+            <h4>Global Efforts and How You Can Help</h4>
+            <p>
+                Governments and organizations are working to reduce emissions through policies and renewable energy. You can help by using public transport, conserving energy, and supporting green initiatives.
+            </p>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

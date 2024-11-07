@@ -1,0 +1,170 @@
+:root{
+    --green:#306B34;
+    --black:#121420;
+    --wblue:#E9F1F7;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--black);
+}
+nav{
+    height: 8%;
+    width: 100%;
+    background-color: #07080c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+nav span{
+    color: var(--wblue);
+}
+#logo{
+    color: var(--green);
+}
+#search{
+    background-color: #F4E04D;
+    height: 5%;
+    width: 15%;
+    display: flex;
+    position: relative;
+    left: 10%;
+    margin-top: 30px;
+    align-items: center;
+}
+label{
+    font-size: 1.5rem;
+}
+#cityN{
+    height: 100%;
+    width: 200px;
+}
+#fetchData{
+    border: none;
+    height: 100%;
+    width: 150px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #F4E04D;
+}
+main{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#dataBox{
+    padding: 10px;
+    height: 65%;
+    width: 25%;
+    background-color: #DF2935;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border-radius: 3%;
+    color: white;
+    margin-top: 150px;
+}
+
+#cityName,#FcityName{
+    background-color: var(--wblue);
+    border-radius: 30px;
+    padding: 10px;
+    color: var(--black);
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+#AQI,#FAQI{
+    font-size: 2.5rem;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+#AQR,#FAQR{
+    font-size: 1.5rem;
+    margin-left: 60px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.Pdata {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+#PolluDta{
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+#health-box{
+    background-color: var(--green);
+    width: 50%;
+    height: 60%;
+    margin-top: 50px;
+    padding: 20px;
+}
+#hR{
+    font-size: 1.5rem;
+}
+#hRH{
+    font-size: 2rem;
+    font-weight: 600;
+}
+#forecast-box{
+    background-color: var(--wblue);
+    height: 35%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+#mapDiv{
+    height: 100%;
+    width:50%
+}
+#education {
+    padding: 20px;
+    background-color: #f0f5f9;
+    border-radius: 8px;
+    max-width: 800px;
+    margin-top:10%;
+    margin-left: 20%;
+    font-family: Arial, sans-serif;
+}
+
+#education h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.subsection {
+    margin-bottom: 20px;
+}
+
+.subsection h4 {
+    color: #34495e;
+}
+
+.subsection p, .subsection ul {
+    color: #5d6d7e;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+

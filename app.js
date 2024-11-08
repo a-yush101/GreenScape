@@ -50,23 +50,23 @@ document.getElementById("fetchData").addEventListener("click", () => {
                 if (aqi >= 0 && aqi <= 50) {
                     AQRN = "Very Good";
                     healthRecommendation = "Air quality is very good. Enjoy outdoor activities!";
-                    dataBox.style.backgroundColor = "#306B34";
+                    dataBox.style.backgroundColor = "rgba(48, 107, 52,0.5)";
                 } else if (aqi >= 51 && aqi <= 100) {
                     AQRN = "Good";
                     healthRecommendation = "Air quality is good. You can continue outdoor activities without concern.";
-                    dataBox.style.backgroundColor = "#6b9803";
+                    dataBox.style.backgroundColor = "rgba(95, 152, 3,0.5)";
                 } else if (aqi >= 101 && aqi <= 150) {
                     AQRN = "Moderate";
                     healthRecommendation = "Air quality is moderate. Children, elderly, and individuals with respiratory issues should limit outdoor activities.";
-                    dataBox.style.backgroundColor = "#F4E04D";
+                    dataBox.style.backgroundColor = "rgba(244, 224, 77,0.5)";
                 } else if (aqi >= 151 && aqi <= 200) {
                     AQRN = "Unhealthy";
                     healthRecommendation = "Air quality is unhealthy. Avoid prolonged outdoor activities. Sensitive groups should stay indoors if possible.";
-                    dataBox.style.backgroundColor = "#FF8552";
+                    dataBox.style.backgroundColor = "rgba(255, 133, 82,0.5)";
                 } else if (aqi >= 201 && aqi <= 300) {
                     AQRN = "Very Unhealthy";
                     healthRecommendation = "Air quality is very unhealthy. Avoid outdoor activities. Everyone, especially vulnerable individuals, should stay indoors and keep windows closed.";
-                    dataBox.style.backgroundColor = "#DF2935";
+                    dataBox.style.backgroundColor = "rgba(223, 41, 53,0.6)";
                 } else {
                     AQRN = "Unknown";
                     healthRecommendation = "AQI data is unavailable. Check local air quality updates.";

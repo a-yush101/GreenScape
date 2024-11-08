@@ -2,6 +2,7 @@
     --green:#306B34;
     --black:#121420;
     --wblue:#E9F1F7;
+    --gr:rgba(255, 133, 82,0.5);
 }
 *{
     margin: 0;
@@ -30,12 +31,12 @@ nav span{
     color: var(--green);
 }
 #search{
-    background-color: #F4E04D;
+    background-color: rgba(244, 224, 77,0.5);
     height: 5%;
-    width: 15%;
+    width: 25%;
     display: flex;
     position: relative;
-    left: 10%;
+    left: 37%;
     margin-top: 30px;
     align-items: center;
 }
@@ -44,7 +45,8 @@ label{
 }
 #cityN{
     height: 100%;
-    width: 200px;
+    width:1000px;
+    font-size: 1.5rem;
 }
 #fetchData{
     border: none;
@@ -52,7 +54,8 @@ label{
     width: 150px;
     padding-right: 10px;
     padding-left: 10px;
-    background-color: #F4E04D;
+    background-color: rgba(244, 224, 77,0.5);
+    cursor: pointer;
 }
 main{
     height: 100%;
@@ -61,28 +64,31 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 #dataBox{
     padding: 10px;
     height: 65%;
     width: 25%;
-    background-color: #DF2935;
+    background-color: rgba(223, 41, 53,0.6);
     flex-direction: column;
     display: flex;
     align-items: center;
     border-radius: 3%;
     color: white;
     margin-top: 150px;
+    
 }
 
 #cityName,#FcityName{
-    background-color: var(--wblue);
+    background-color: rgba(233, 241, 247,0.9);
     border-radius: 30px;
     padding: 10px;
     color: var(--black);
     font-size: 2.5rem;
     margin-top: 10px;
 }
+
 #AQI,#FAQI{
     font-size: 2.5rem;
     margin-left: 80px;
@@ -103,7 +109,8 @@ main{
     margin-bottom: 10px;
 }
 #health-box{
-    background-color: var(--green);
+    color: var(--wblue);
+    background-color: rgba(48, 107, 52,0.5);
     width: 50%;
     height: 60%;
     margin-top: 50px;
@@ -117,7 +124,7 @@ main{
     font-weight: 600;
 }
 #forecast-box{
-    background-color: var(--wblue);
+    background-color: rgba(233, 241, 247,0.6);
     height: 35%;
     width: 80%;
     display: flex;
@@ -137,7 +144,7 @@ main{
     border-radius: 8px;
     max-width: 800px;
     margin-top:10%;
-    margin-left: 20%;
+    margin-left: 25%;
     font-family: Arial, sans-serif;
 }
 

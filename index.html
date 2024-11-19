@@ -11,30 +11,33 @@
         <h1 id="logo">Green<span>Scape</span></h1>
     </nav>
     <div id="search">
-        <label for="cityN">Search:</label>
-        <input type="text" name="city" id="cityN">
+        <input type="text" name="city" id="cityN" placeholder="Search for city...">
         <button id="fetchData">🔍</button>
     </div>
     <main>
-        <div id="dataBox">
-            <div class="mainData">
-                <h3 id="cityName">Phagwara</h3>
-                <h2 id="AQI">179</h2>
-                <p id="AQR">UNHEALTHY</p>
+        <div id="container">
+            <div id="dataBox">
+                <div class="mainData">
+                    <h3 id="cityName">Phagwara</h3>
+                    <h2 id="AQI">179</h2>
+                    <p id="AQR">UNHEALTHY</p>
+                </div>
+                <div class="Pdata">
+                    <h3 id="PolluDta"><u>Pollutant data(in μg/m3):</u></h3>
+                    <p>CO : <span id="CO">794</span></p>
+                    <p>NO2 : <span id="NO2">26.13</span></p>
+                    <p>SO2 : <span id="SO2">9.3</span></p>
+                    <p>PM10 : <span id="PM">188.29</span></p>
+                </div>
             </div>
-            <div class="Pdata">
-                <h3 id="PolluDta"><u>Pollutant data(in μg/m3):</u></h3>
-                <p>CO : <span id="CO">794</span></p>
-                <p>NO2 : <span id="NO2">26.13</span></p>
-                <p>SO2 : <span id="SO2">9.3</span></p>
-                <p>PM10 : <span id="PM">188.29</span></p>
+            <div id="health-box">
+                <p id="hRH"> <u>Health Recommendation:</u></p>
+                <br>
+                <br>
+                <p id="hR">If you start to feel respiratory discomfort such as coughing or breathing difficulties, consider reducing the intensity 
+                            of your outdoor activities.
+                            Try to limit the time you spend near busy roads, construction sites, open fires and other sources of smoke.</p>
             </div>
-        </div>
-        <div id="health-box">
-            <p id="hRH"> <u>Health Recommendation:</u></p>
-            <p id="hR">If you start to feel respiratory discomfort such as coughing or breathing difficulties, consider reducing the intensity 
-                        of your outdoor activities.
-                        Try to limit the time you spend near busy roads, construction sites, open fires and other sources of smoke.</p>
         </div>
             <div id="forecast-box">
                 <h2>AQI Forecast:(Avg of 5 days)</h2>
@@ -84,6 +87,9 @@
             </p>
         </div>
     </section>
+    <footer>
+        <h2>A project by Ayush Verma, Ayush Shukla and Shreya for CA1 of CHE110</h2>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="app.js"></script>

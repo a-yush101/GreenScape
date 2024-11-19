@@ -13,7 +13,8 @@
 body{
     height: 100vh;
     width: 100%;
-    background-color: var(--black);
+    background-image: url(GSBG.jpg);
+    background-size: cover;
 }
 nav{
     height: 8%;
@@ -31,31 +32,45 @@ nav span{
     color: var(--green);
 }
 #search{
-    background-color: rgba(244, 224, 77,0.5);
+    background-color: rgba(0, 0, 0,0.8);
     height: 5%;
-    width: 25%;
+    width: 26%;
     display: flex;
     position: relative;
     left: 37%;
     margin-top: 30px;
     align-items: center;
-}
-label{
-    font-size: 1.5rem;
+    border-radius: 10px;
 }
 #cityN{
     height: 100%;
     width:1000px;
     font-size: 1.5rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    background-color: rgba(0, 0, 0,0.4);
+    color: #E9F1F7;
+    padding-left: 20px;
+}
+#cityN::placeholder{
+    color: #E9F1F7;
+}
+#cityN:active{
+    background-color: rgba(0, 0, 0,0.4);
+    color: #E9F1F7;
 }
 #fetchData{
     border: none;
     height: 100%;
     width: 150px;
     padding-right: 10px;
+    background-color: rgba(0, 0, 0,0.4);
     padding-left: 10px;
-    background-color: rgba(244, 224, 77,0.5);
     cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: larger;
 }
 main{
     height: 100%;
@@ -66,18 +81,26 @@ main{
     justify-content: center;
     margin-top: 50px;
 }
+#container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
 #dataBox{
     padding: 10px;
-    height: 65%;
+    height: 100%;
     width: 25%;
-    background-color: rgba(223, 41, 53,0.6);
+    background-color: rgba(223, 41, 53,0.4);
+    backdrop-filter: blur(100px);
+    box-shadow: 0px 0px 100px 20px rgba(0, 0, 0,0.8);
     flex-direction: column;
     display: flex;
     align-items: center;
-    border-radius: 3%;
+    border-radius: 20px;
     color: white;
-    margin-top: 150px;
-    
 }
 
 #cityName,#FcityName{
@@ -94,12 +117,12 @@ main{
 
 #AQI,#FAQI{
     font-size: 2.5rem;
-    margin-left: 80px;
+    margin-left: 60px;
     margin-top: 20px;
 }
 #AQR,#FAQR{
     font-size: 1.5rem;
-    margin-left: 60px;
+    margin-left: 25px;
     margin-top: 20px;
     font-weight: 600;
 }
@@ -113,11 +136,12 @@ main{
 }
 #health-box{
     color: var(--wblue);
-    background-color: rgba(48, 107, 52,0.5);
-    width: 50%;
-    height: 60%;
-    margin-top: 50px;
+    background-color: rgba(48, 107, 52,0.6);
+    width: 30%;
+    height: 100%;
     padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px 20px rgba(0, 0, 0,0.8);
 }
 #hR{
     font-size: 1.5rem;
@@ -127,15 +151,15 @@ main{
     font-weight: 600;
 }
 #forecast-box{
-    background-color: rgba(233, 241, 247,0.6);
+    background-color: rgba(233, 241, 247,0.4);
     height: 35%;
-    width: 80%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 10%;
     border-radius: 5px;
+    box-shadow: 0px 0px 100px 20px rgba(0, 0, 0,0.8);
 }
 #mapDiv{
     height: 100%;
@@ -149,6 +173,7 @@ main{
     margin-top:10%;
     margin-left: 25%;
     font-family: Arial, sans-serif;
+    box-shadow: 0px 0px 100px 10px rgba(0, 0, 0,0.8);
 }
 
 #education h2 {
@@ -178,3 +203,12 @@ ul li {
     margin-bottom: 8px;
 }
 
+footer{
+    background-color: #07080c;
+    height: 75px;
+    color: #E9F1F7;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
